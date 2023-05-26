@@ -1,0 +1,28 @@
+.header{
+    border: 1px solid #474b4e;
+    background-color: #474b4e;
+    border-radius: 4px;
+    padding: 1%;
+    text-align: right;
+}
+
+.navbar{
+    display:flex;
+    list-style: none;
+    gap: 2%;
+
+
+}
+
+.navbar li{
+    justify-content: flex-end;
+    display:flex;
+    border: 1px solid ;
+    border-radius: 4px;
+    padding:0.5%;
+}
+
+.navbar a:hover{
+    color: #f0f0f0;
+    text-decoration: underline;
+}
