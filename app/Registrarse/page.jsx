@@ -1,8 +1,9 @@
-export default function Register(){
+export default function Register() {
     return(
-        <nav>
+        <div id="container">
             <form>
                 <h1>Ingrese los datos solicitados para registrarse</h1>
+                <br/>
                 <label htmlFor="name"></label>
                 <input type="text" id="nombres" name="nombres" placeholder="Ingrese sus nombres"/>
 
@@ -17,6 +18,6 @@ export default function Register(){
 
                 <button type="submit">Registrarse</button>
             </form>
-        </nav>
+        </div>
     );
 }

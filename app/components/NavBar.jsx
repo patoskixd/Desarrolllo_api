@@ -24,11 +24,12 @@ const links = [{
 
 export function NavBar() {
     return(
-        <header className ={styles.header}>
+        <header  className ={styles.header}>
+        
+          <h1 className = {styles.titulo}>InventApp</h1>
           <nav>
-            
-            <ul className = {styles.navbar}>
-              <h1 className = {styles.titulo}>InventApp</h1>
+            <ul  className = {styles.navbar}>              
+
               {links.map(({label , route}) =>(
                 
                 <li key = {route}>
