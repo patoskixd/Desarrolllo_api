@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
+import { NavBar2 } from "../components/NavBar2";
+import { useRouter } from "next/navigation";
+
 export default function CrearInventario() {
+    const router = useRouter();
     return(
+        <div>
+        <NavBar2/>
         <div id="container">
             <form> 
                 <h1>Ingrese los datos solictados para crear un nuevo inventario</h1>
@@ -13,9 +19,10 @@ export default function CrearInventario() {
                         <option value="personalizado">Inventario Personalizado</option>
                     </select>
                 </label>
-                <br/>
-                <button type="submit">Crear Inventario</button>
+                <br></br>
+                <button type="submit" onClick={()=> router.push('/Inventarios/1')}>Crear Inventario</button>
             </form>
-        </div>          
+        </div>
+        </div>         
     );
 }

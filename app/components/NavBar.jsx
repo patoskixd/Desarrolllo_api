@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './NavBar.module.css'
+import { useRouter } from 'next/navigation';
 
 const links = [{
   label:'Inicio',
@@ -10,26 +11,15 @@ const links = [{
 }, {
   label: 'Registrarse',
   route: '/Registrarse',
-}, {
-  label:'Crear Inventario',
-  route:'/CrearInventario',
-}, {
-  label: 'Tablas',
-  route: '/Tablas',
-}, {
-  label: 'Usuarios',
-  route: '/Users'
 }]
 
 
 export function NavBar() {
+  const router = useRouter();
     return(
         <header  className ={styles.header}>
-        
-          <h1 className = {styles.titulo}>InventApp</h1>
-          <nav>
-            <ul  className = {styles.navbar}>              
-
+          <div className={styles.izquierda}><h1 onClick={() => router.push('/')}>InventApp</h1></div>
+            <ul  className = {styles.navbar}>          
               {links.map(({label , route}) =>(
                 
                 <li key = {route}>
@@ -39,7 +29,6 @@ export function NavBar() {
                 </li>
               ))}
             </ul>
-          </nav>
           </header>
     );
 }

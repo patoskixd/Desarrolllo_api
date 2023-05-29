@@ -1,5 +1,13 @@
+"use client";
+import React from "react";
+import { NavBar } from '../components/NavBar';
+import { useRouter } from 'next/navigation';
+
 export default function Register() {
+    const router = useRouter();
     return(
+        <div>
+        <NavBar/>
         <div id="container">
             <form>
                 <h1>Ingrese los datos solicitados para registrarse</h1>
@@ -13,11 +21,12 @@ export default function Register() {
                 <label htmlFor="email"></label>
                 <input type="email" id="email" name="email" placeholder="Ingrese su correo"/>
 
-                <label htmlFor="email"></label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su contraseña"/>
+                <label htmlFor="password"></label>
+                <input type="password" id="passwordR" name="passwordR" placeholder="Ingrese su contraseña"/>
 
-                <button type="submit">Registrarse</button>
+                <button id='boton2'>Registrarse</button>
             </form>
+        </div>
         </div>
     );
 }

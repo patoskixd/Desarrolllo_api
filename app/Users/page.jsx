@@ -1,8 +1,11 @@
+import { NavBar2 } from "../components/NavBar2";
 
 export default function users() {
   return(
+    <div>
+      <NavBar2/>
       <div id="table-container">
-        <h1 id="heading"> Tablas</h1>
+        <h1 id="heading"> Usuarios</h1>
         <table id="table">
           <thead>
           <tr>
@@ -44,5 +47,6 @@ export default function users() {
           </tbody>
         </table>
       </div>
+    </div>
   );
 }
