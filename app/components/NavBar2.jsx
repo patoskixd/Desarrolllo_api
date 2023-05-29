@@ -4,7 +4,7 @@ import styles from './NavBar.module.css'
 import { useRouter } from 'next/navigation';
 
 const links = [{
-    label:'Tablas',
+    label:'Inventarios',
     route:'/Tablas'
   }, {
     label: 'Crear Inventario',

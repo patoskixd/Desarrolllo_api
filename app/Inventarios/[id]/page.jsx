@@ -11,7 +11,7 @@ export default function tablas({params}){
           <NavBar2/>
             {id === '1' ? (
             <div id="table-container">
-              <h1 id="heading"> Inventario</h1>
+              <h1 id="heading"> Inventario General</h1>
               <table id="table">
               <thead>
                 <tr>
@@ -34,7 +34,7 @@ export default function tablas({params}){
                 <td>Row 2, Column 3</td>
                 <td>Row 2, Column 3</td>
                 <td>{id}</td>
-                <td><button id="boton1">Ver</button><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
+                <td><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
               </tr>
               <tr>
                 <td>2</td>
@@ -44,7 +44,7 @@ export default function tablas({params}){
                 <td>Row 3, Column 3</td>
                 <td>Row 3, Column 3</td>
                 <td>{id}</td>
-                <td><button id="boton1">Ver</button><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
+                <td><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
               </tr>
               </tbody>
             </table>
@@ -70,7 +70,7 @@ export default function tablas({params}){
             </div>
              ) : id === '2' ?(
             <div id="table-container">
-              <h1 id="heading"> Inventario</h1>
+              <h1 id="heading"> Inventario Personalizado</h1>
               <table id="table">
                 <thead>
               <tr>
@@ -89,7 +89,7 @@ export default function tablas({params}){
                 <td>Row 2, Column 3</td>
                 <td>Row 2, Column 3</td>
                 <td>{id}</td>
-                <td><button id="boton1">Ver</button><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
+                <td><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
               </tr>
               <tr>
                 <td>4</td>
@@ -97,7 +97,7 @@ export default function tablas({params}){
                 <td>Row 3, Column 3</td>
                 <td>Row 3, Column 3</td>
                 <td>{id}</td>
-                <td><button id="boton1">Ver</button><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
+                <td><button id="boton2">Editar</button><button id="boton3">Eliminar</button></td>
               </tr>
               </tbody>
             </table>

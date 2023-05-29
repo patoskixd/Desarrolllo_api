@@ -10,7 +10,7 @@ export default function tablas() {
       <div>
         <NavBar2/>
         <div id="table-container">
-          <h1 id="heading"> Tablas</h1>
+          <h1 id="heading"> Iventarios</h1>
             <table id="table">
               <thead>
                 <tr>

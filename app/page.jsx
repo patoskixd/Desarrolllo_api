@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Inicio(){
     const router = useRouter();
     return(
-        <nav>
+        <div>
             <NavBar/>
             <div id="contenedor">
                 <br/>
@@ -37,6 +37,6 @@ export default function Inicio(){
                 </ul>
             </nav>
 
-        </nav>
+        </div>
     );
 }
