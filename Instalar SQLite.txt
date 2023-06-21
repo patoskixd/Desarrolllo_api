@@ -1,0 +1,3 @@
+https://www.sqlite.org/download.html
+
+Dentro de ese link buscar las 3 opciones que salen en "Precompiled Binaries for Windows", y descargar la ultima, sqlite-tools..., instalarlo en el donde se tiene el proyecto y luego importar la base de datos
