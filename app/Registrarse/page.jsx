@@ -2,6 +2,7 @@
 import React from "react";
 import { NavBar } from '../components/NavBar';
 import { useRouter } from 'next/navigation';
+import 'E:/desarrollo1/styles/globals.css';
 
 export default function Register() {
     const router = useRouter();

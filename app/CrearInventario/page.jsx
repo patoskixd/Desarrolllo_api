@@ -2,6 +2,7 @@
 import React from "react";
 import { NavBar2 } from "../components/NavBar2";
 import { useRouter } from "next/navigation";
+import 'E:/desarrollo1/styles/globals.css';
 
 export default function CrearInventario() {
     const router = useRouter();

@@ -1,7 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { NavBar2 } from "../components/NavBar2";
+import 'E:/desarrollo1/styles/globals.css';
+
 
 export default function tablas() {
 
@@ -34,7 +36,12 @@ export default function tablas() {
                   <td><button id="boton1" onClick={() => router.push('/Inventarios/2')}>Ver</button><button id="boton2" onClick={() => router.push('/Inventarios/2')}>Editar</button></td>
                 </tr>
               </tbody>
-              
+              <AppContext.Provider value = {{
+                inventar : myinventarios,
+                setMyInventario : setMyInventarios
+              }}>
+
+              </AppContext.Provider>
             </table>
         </div>
       </div>

@@ -2,6 +2,7 @@
 import React from "react";
 import { NavBar } from './components/NavBar.jsx'
 import { useRouter } from "next/navigation";
+import 'E:/desarrollo1/styles/globals.css'
 
 export default function Inicio(){
     const router = useRouter();

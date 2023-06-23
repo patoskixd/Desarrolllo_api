@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+
+model Usuario {
+  id_usuario        Int      @id @default(autoincrement()) 
+  Nombre            String
+  correo            String
+  contrasena        String
+  permiso_edicion   Int      @default(0) // Assuming permiso_edicion is a numeric field
+}
+
+model Inventario{
+  id_inventario Int @id @default(autoincrement())
+  tipo_inventario Int @default(0)
+  nombre_inventario String
+  objetos Objeto[]
+  objetos_perso Objeto_personalizado[]
+}
+
+model Objeto {
+  id_objeto     Int     @id @default(autoincrement())
+  objeto        String
+  tipo          String
+  peso          String
+  valor         Int
+  cantidad      Int
+  id_inventario Int     @map("id_inventario") // Assuming id_inventario is the foreign key field
+  inventario    Inventario @relation(fields: [id_inventario], references: [id_inventario])
+}
+
+model Objeto_personalizado {
+  id_objeto_p   Int     @id @default(autoincrement())
+  objeto_p      String
+  reservacion   String
+  valor_p       String
+  precio_b      String
+  id_inventario Int     @map("id_inventario") // Assuming id_inventario is the foreign key field
+  inventario    Inventario @relation(fields: [id_inventario], references: [id_inventario])
+}
+
+
+
+

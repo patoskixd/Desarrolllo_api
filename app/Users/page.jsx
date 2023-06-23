@@ -1,4 +1,5 @@
 import { NavBar2 } from "../components/NavBar2";
+import 'E:/desarrollo1/styles/globals.css'
 
 export default function users() {
   return(
